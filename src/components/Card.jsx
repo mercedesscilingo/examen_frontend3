@@ -1,7 +1,13 @@
 
-const Card = () => {
+const Card = ({nombre, cancion}) => {
     return(
-        <div className="card">Hola , soy una tarjeta</div>
+        <>
+            <div className="card">
+                <h3>Hola , {nombre}!</h3>
+                <p>Sabemos que tu canción favorita es {cancion}</p>
+            </div>
+        </>
+
     )
 };
     
