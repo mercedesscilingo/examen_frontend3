@@ -11,8 +11,7 @@ function App() {
   function handleSubmit(e){
       e.preventDefault();
 
-      if(nombre.trim().length > 2 && !nombre.includes(" ") && 
-      cancion.length >= 6 && !cancion.includes(" ")){
+      if(nombre.trim().length > 2 && !nombre.includes(" ") && cancion.length >= 6){
         setNombre(nombre);
         setCancion(cancion);
         setDisplayCard(true);
@@ -63,7 +62,7 @@ function App() {
         </form>
 
         {displayCard && <Card
-          name={nombre}
+          nombre={nombre}
           cancion={cancion}
         />}
 
